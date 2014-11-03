@@ -1,10 +1,20 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title>Christian Murphy MSc. BSc. </title>
-</head>
-<body>
-
-</body>
-</html>
+{% extends "layout_right.jinja2" %}
+{% block title %}Christian Murphy's development blog{% endblock %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
+{% block content %}
+    <div>
+       <div class="hero-unit">
+            <img src='static/img/bio.jpg' Hspace="10" Vspace="10" padding=20px width=100px height=100px align="left"/><p><span style="color: rgb(51, 51, 51); font-family: Ubuntu, Tahoma, sans-serif; font-size: 13px; line-height: 18px; background-color: rgb(245, 245, 245);">I&#39;ve been programming since the age of 12 on and off...
+<p><span style="color: rgb(51, 51, 51); font-family: Ubuntu, Tahoma, sans-serif; font-size: 13px; line-height: 18px; background-color: rgb(245, 245, 245);">Studied BSc (Hons).Games Development at the University of Bedfordshire.&nbsp;
+<a href="https://drive.google.com/file/d/0B2UbubxToR3BOEo1dkp1dmd1cE0/view?usp=sharing">(Thesis Report - AI Pathfinding in Modern Game Development )</a>
+Studied at University of Kent in MSc Advanced Computer Science.
+<a href="https://docs.google.com/document/d/1amWmX0eOX4gzbucLoy_NEYbDB3onjH7dXFE7Tk7bi2M/edit?usp=sharing">(Thesis Report - C++ Courseware for Computer Games Programming )</a>
+I&#39;ve worked with Flash AS3, Java, Javascript, Python, C++ and C#.
+Coding makes me happy, and I love to work on projects of all diciplines , often radically jumping between languages and domains, from gui programming to web development to tools creation to game development.
+Making games is an art. I&#39;d like to expand my horizons in game development and introduce new exciting game mechanics. Until then, I&#39;ll keep learning how to program existing ones better.</span></p>
+<img src='static/img/site-headeralt.png'/>
+</div>
+</div>
+{% endblock %}

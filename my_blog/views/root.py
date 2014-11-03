@@ -24,6 +24,9 @@ def my_view(request):
         entries.append(entry)
     return {'cur_page': 'home', 'page_title': 'Welcome to Christian\'s Blog', 'entries': entries}
 
+@view_config(context='my_blog:resources.Root', renderer='about.jinja2', name='about')
+def about(request):
+    return {'cur_page':'about'}
 
 @view_config(context='pyramid.httpexceptions.HTTPNotFound', renderer='404_error.jinja2')
 def not_found(request):
