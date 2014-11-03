@@ -1,0 +1,27 @@
+<div class="well sidebar-nav">
+      <ul class="nav nav-list">
+        <li class="nav-header">About Christian</li>
+
+        <li><p>Welcome to my blog! I am a software engineer/web developer/game developer in sunny and lovely Canterbury, Kent, UK. I will post my latest projects and occasional products of hackathons here.</p></li>
+        <div class="btn-o" contextmenu="menu" data-scribe="component:button"><a id="follow-button" class="btn" title="Follow @Grimpunch on Twitter" href="https://twitter.com/intent/follow?original_referer=http%3A%2F%2Fweb.archive.org%2Fweb%2F20130719075425%2Fhttp%3A%2F%2Fgrimpunch.breezinstein.com%2F&amp;region=follow_link&amp;screen_name=Grimpunch&amp;tw_p=followbutton"><i></i><span class="label" id="l">Follow <b>@Grimpunch</b></span></a></div>
+      </ul>
+    </div><!--/.well -->
+    <div class="well sidebar-nav">
+      <ul class="nav nav-list">
+        <li class="nav-header">Categories</li>
+        <li><a href="/category/development">Development</a></li>
+        <li><a href="/category/releases">Releases</a></li>
+        <li><a href="/category/archives">Archives</a></li>
+      </ul>
+    </div><!--/.well -->
+    <div class="well sidebar-nav">
+      <ul class="nav nav-list">
+        <li class="nav-header">Recent Entries</li>
+        {% for title in recent_titles %}<li><a href="/post/{{title.url}}">{{title.title}}</a></li>{% endfor %}
+      </ul>
+    </div><!--/.well -->
+    <div class="well sidebar-nav">
+      <ul class="nav nav-list">
+        <li class="nav-header">Admin</li>
+        <a href="/my_admin/login" class="btn btn-primary btn-default">Login</a>
+      </ul>
